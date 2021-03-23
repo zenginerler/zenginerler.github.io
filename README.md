@@ -1,4 +1,4 @@
 # zenginerler.github.io
-Template repository for a GitHub Page
+Template repository for my Personal Website
 
 https://zenginerler.github.io/

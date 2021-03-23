@@ -1,0 +1,145 @@
+/* General settings - Config
+------------------------------------------------------------------------------- */
+
+/* imports */
+@import url("./fonts/fonts.css");
+
+/* global variables */
+:root {
+    --white: #fff;
+    --black: #000;
+    --backgroundBlack: #333333;
+    --red: #ff0000;
+    --light-grey: #eae7e6;
+    --dark-grey: #57605f;
+    --orange: #bf5700;
+    --light-orange: #f5b042;
+    --shadow-color: #000000aa;
+}
+
+/* presets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--white);
+    font-family: 'opensans_regular', sans-serif, Roboto;
+}
+
+
+/* Header 
+------------------------------------------------------------------------------- */
+header {
+    border-bottom: 1px solid #000;
+}
+
+.banner {
+    background-color: var(--white);
+    margin: 5px;
+    padding: 1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+/* FIXME: left */
+#bannerLeft {
+    border: 2px solid var(--red);
+    flex-grow: 1;
+}
+
+#logo {
+    max-width: 50px;
+    max-height: 50px;
+    border: 2px solid var(--red);
+}
+
+#name {
+    margin: 2px;
+    font-size: 25px;
+    border: 2px solid var(--red);
+}
+
+
+/* FIXME: middle */
+#bannerMiddle {
+    border: 2px solid var(--red);
+    flex-grow: 3;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    list-style: none;
+    margin: 2px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font: 14px 'opensans_bold';
+    display: block;
+    padding: 1em;
+    color: #000;
+}
+  
+.navigation a:hover {
+    background: var(--orange);
+}
+
+/* FIXME: right */
+#bannerRight {
+    border: 2px solid var(--red);
+    flex-grow: 1;
+}
+
+
+/* Main Content
+------------------------------------------------------------------------------- */
+#mainContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    max-width: 900px;
+    margin: 1px auto;
+    padding: 1px;
+}
+
+#mainContent h1, h2, h3, h4, h5, h6 {
+    padding: 1em 1em 0 1em;
+}
+
+#mainContent p {
+    padding: 1em;
+}
+
+/* 
+.contentContainer {
+
+}
+*/
+
+
+/* Footer
+------------------------------------------------------------------------------- */
+footer {
+    margin: 1px;
+    padding: 1em;
+    border-top: 2px solid var(--black);
+    text-align: center;
+}
