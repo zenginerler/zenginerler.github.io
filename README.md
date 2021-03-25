@@ -1,4 +1,6 @@
 # zenginerler.github.io
-Template repository for my Personal Website
+Source code for my personal website
 
-https://zenginerler.github.io/
+&#128679; &#128296; It's currently under development, but you can check out my progress here:
+
+- https://zenginerler.github.io/

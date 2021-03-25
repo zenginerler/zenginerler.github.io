@@ -1,6 +1,7 @@
 /* Hello There! */
 
 
+
 /* General settings - Config
 ------------------------------------------------------------------------------- */
 
@@ -29,15 +30,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
 body {
+    font-family: 'opensans_regular', sans-serif, 'roboto_regular';
     background-color: var(--backgroundBlack);
     color: var(--light-grey);
-
-    scroll-behavior: smooth;
-    font-family: 'opensans_regular', sans-serif, 'roboto_regular';
 }
 
 
