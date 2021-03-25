@@ -4,8 +4,9 @@
 /* General settings - Config
 ------------------------------------------------------------------------------- */
 
-/* imports */
-@import url("./fonts/fonts.css");
+/* font imports */
+@import url("./fonts/OpenSans/open_sans.css");
+@import url("./fonts/Roboto/roboto.css");
 
 
 /* global variables */
@@ -28,15 +29,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'opensans_regular', sans-serif, Roboto;
 }
 
 
 body {
     background-color: var(--backgroundBlack);
     color: var(--light-grey);
-    
+
+    scroll-behavior: smooth;
+    font-family: 'opensans_regular', sans-serif, 'roboto_regular';
 }
 
 
@@ -90,7 +91,7 @@ header {
 
 #name {
     margin: 5px;
-    font: 18px 'opensans_semibold-italic';
+    font: 18px 'roboto_medium-italic';
     letter-spacing: 1px;
     color: var(--white);
 
@@ -118,7 +119,7 @@ header {
 
 .navigation a {
     text-decoration: none;
-    font: 15px 'opensans_bold';
+    font: 15px 'roboto_medium';
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
@@ -148,6 +149,10 @@ header {
 #bannerRight a:hover {
     color: var(--orange);
     /* background: var(--light-grey); */
+}
+
+#bannerRight h3 {
+    font: 15px 'roboto_bold';
 }
 
 
@@ -189,6 +194,7 @@ header {
 
 .social_media_links a {
     text-decoration: none;
+    font: 16px 'roboto_bold';
     margin: 0px 1em 0px 1em;
     color: var(--white);
     transform-origin: 0 0;
@@ -210,7 +216,7 @@ header {
 ------------------------------------------------------------------------------- */
 
 #aboutMe {
-    height: 25vh;
+    height: 20vh;
     margin-top: 1em;
     /* border: 2px solid red; */
 }
