@@ -9,7 +9,7 @@
 :root {
     --white: #fff;
     --black: #000;
-    --backgroundBlack: #252525;
+    --backgroundBlack: #1E1E1E;
     --red: #ff0000;
     --blue: #0000ff;
     --light-grey: #eae7e6;
@@ -33,22 +33,31 @@
 body {
     background-color: var(--backgroundBlack);
     color: var(--light-grey);
+    
 }
 
 
 /* Header 
 ------------------------------------------------------------------------------- */
 header {
+    /* height: 6rem;  */
     border: none;
 }
 
 .banner {
-    margin: 5px 5px 2em 5px;
-    padding: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 3; /* highest layer */
+    padding: 5px 5px 5px 5px;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: transparent;
 }
 
 .banner div {
@@ -70,6 +79,7 @@ header {
     display: block;
     max-width: 50px;
     max-height: 50px;
+    border-radius: 50%;
     
     /* border: 2px solid var(--blue); */
 }
@@ -78,7 +88,7 @@ header {
     margin: 5px;
     font: 18px 'opensans_semibold-italic';
     letter-spacing: 1px;
-    color: var(--black);
+    color: var(--white);
     /* border: 2px solid var(--blue); */
 }
 
@@ -108,7 +118,7 @@ header {
     letter-spacing: 1px;
     display: block;
     padding: 1px;
-    color: var(--black);
+    color: var(--white);
 }
   
 .navigation a:hover {
@@ -120,20 +130,49 @@ header {
 #bannerRight {
     justify-content: flex-end;
     flex: 1;
-
     /* border: 2px solid var(--blue); */
 }
 
 #bannerRight a {
     text-decoration: none;
     font: 14px 'opensans_bold';
-    color: var(--black);
+    color: var(--white);
+    padding: 1em;
 }
 
 #bannerRight a:hover {
     color: var(--orange);
     /* background: var(--light-grey); */
 }
+
+
+/* Welcome Section
+------------------------------------------------------------------------------- */
+#welcome {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    min-height: 800px;
+
+    background-image: url(../data/images/ship_stars_edited.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#welcome_title {
+    text-align: center;
+    font-size: 60px;
+    margin: 4em 2em 1em 2em;
+}
+
+#welcome_message {
+    text-align: center;
+    font-size: 22px;
+    margin: 2px 4em 2px 4em;
+}
+
+
 
 /* Main Content
 ------------------------------------------------------------------------------- */
@@ -147,7 +186,7 @@ header {
     padding: 1px;
 }
 
-#mainContent h1, h2, h3, h4, h5, h6 {
+#mainContent h3 {
     padding: 1em 1em 0 1em;
 }
 
