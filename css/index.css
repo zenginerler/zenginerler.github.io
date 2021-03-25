@@ -1,3 +1,6 @@
+/* Hello There! */
+
+
 /* General settings - Config
 ------------------------------------------------------------------------------- */
 
@@ -25,7 +28,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
     font-family: 'opensans_regular', sans-serif, Roboto;
 }
 
@@ -80,8 +83,9 @@ header {
     max-width: 50px;
     max-height: 50px;
     border-radius: 50%;
-    
-    /* border: 2px solid var(--blue); */
+    padding: 3px;
+
+    /* border: 2px solid var(--green); */
 }
 
 #name {
@@ -89,6 +93,7 @@ header {
     font: 18px 'opensans_semibold-italic';
     letter-spacing: 1px;
     color: var(--white);
+
     /* border: 2px solid var(--blue); */
 }
 
@@ -172,6 +177,49 @@ header {
     margin: 2px 4em 2px 4em;
 }
 
+.social_media_links {
+    margin-top: 3em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* border: 1px solid green; */
+}
+
+.social_media_links a {
+    text-decoration: none;
+    margin: 0px 1em 0px 1em;
+    color: var(--white);
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+}
+
+.social_media_links a:hover {
+    color: var(--orange);
+}
+
+.rotator {
+    transform: rotate(-10deg);
+
+    /* border: 1px solid blue; */
+}
+
+
+/* About-Me Section
+------------------------------------------------------------------------------- */
+
+#aboutMe {
+    height: 25vh;
+    margin-top: 1em;
+    /* border: 2px solid red; */
+}
+
+.aboutMe_content {
+    text-align: center;
+
+    /* border: 2px solid green; */
+}
 
 
 /* Main Content
@@ -194,11 +242,9 @@ header {
     padding: 1em;
 }
 
-/* 
 .contentContainer {
-
+    text-align: center;
 }
-*/
 
 
 /* Footer
