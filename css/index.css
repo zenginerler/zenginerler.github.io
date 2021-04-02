@@ -1,7 +1,5 @@
 /* Hello There! */
 
-
-
 /* General settings - Config
 ------------------------------------------------------------------------------- */
 
@@ -9,21 +7,17 @@
 @import url("./fonts/OpenSans/open_sans.css");
 @import url("./fonts/Roboto/roboto.css");
 
-
 /* global variables */
 :root {
     --white: #fff;
     --black: #000;
     --backgroundBlack: #1E1E1E;
-    --red: #ff0000;
-    --blue: #0000ff;
     --light-grey: #eae7e6;
     --dark-grey: #57605f;
     --orange: #bf5700;
     --light-orange: #f5b042;
     --shadow-color: #000000aa;
 }
-
 
 /* presets */
 * {
@@ -32,7 +26,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 
 body {
     font-family: 'opensans_regular', sans-serif, 'roboto_regular';
@@ -44,24 +37,24 @@ body {
 /* Header 
 ------------------------------------------------------------------------------- */
 header {
-    /* height: 6rem;  */
     border: none;
 }
 
 .banner {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
+    background-color: transparent;
+    transition: top .5s;
+
     width: 100%;
-    z-index: 3; /* highest layer */
-    padding: 5px 5px 5px 5px;
+    z-index: 3;
+    padding: 5px;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: transparent;
 }
 
 .banner div {
@@ -71,50 +64,44 @@ header {
 }
 
 
-/* FIXME: left */
+/* TODO: improve left side of the banner */
 #bannerLeft {
     justify-content: flex-start;
     flex: 1;
-
-    /* border: 2px solid var(--blue); */ 
 }
 
+/* TODO: add better and transparent logo */
 #logo {
     display: block;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 48px;
+    max-height: 48px;
     border-radius: 50%;
     padding: 3px;
-
-    /* border: 2px solid var(--green); */
 }
 
+/* TODO: improve font settings for modern look -1*/
 #name {
     margin: 5px;
     font: 18px 'roboto_medium-italic';
     letter-spacing: 1px;
-    color: var(--white);
-
-    /* border: 2px solid var(--blue); */
+    color: var(--light-grey);
 }
 
 
-/* FIXME: middle */
 #bannerMiddle {
     flex: 2;
-
-    /* border: 2px solid var(--blue); */
 }
 
+/* TODO: improve font settings for modern look -2*/
 .navigation {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-
     list-style: none;
     width: 100%;
     max-width: 600px;
     margin: 2px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .navigation a {
@@ -122,37 +109,35 @@ header {
     font: 15px 'roboto_medium';
     text-transform: uppercase;
     letter-spacing: 1px;
-    display: block;
     padding: 1px;
-    color: var(--white);
+
+    display: block;
+    color: var(--light-grey);
 }
   
 .navigation a:hover {
     color: var(--orange);
-    /* background: var(--light-grey); */
 }
 
-/* FIXME: right */
+/* ! FIXME: add some js functionality */
 #bannerRight {
     justify-content: flex-end;
     flex: 1;
-    /* border: 2px solid var(--blue); */
 }
 
 #bannerRight a {
     text-decoration: none;
     font: 14px 'opensans_bold';
-    color: var(--white);
     padding: 1em;
+    color: var(--dark-grey);
 }
 
 #bannerRight a:hover {
     color: var(--orange);
-    /* background: var(--light-grey); */
 }
 
 #bannerRight h3 {
-    font: 15px 'roboto_bold';
+    font: 14px 'roboto_bold';
 }
 
 
@@ -160,9 +145,9 @@ header {
 ------------------------------------------------------------------------------- */
 #welcome {
     height: 100vh;
-    overflow: hidden;
     width: 100%;
     min-height: 800px;
+    overflow: hidden;
 
     background-image: url(../data/ship_stars_edited.jpg);
     background-repeat: no-repeat;
@@ -170,47 +155,55 @@ header {
     background-size: cover;
 }
 
+.welcome_content {
+    position: relative;
+    min-width: 300px;
+    max-width: 900px;
+    margin: 18% auto 5% auto;
+}
+
 #welcome_title {
+    position: relative;
     text-align: center;
     font-size: 60px;
-    margin: 4em 2em 1em 2em;
+    margin: 0px 1rem 0px 1rem;
 }
 
 #welcome_message {
+    position: relative;
     text-align: center;
     font-size: 22px;
     margin: 2px 4em 2px 4em;
 }
 
+
 .social_media_links {
-    margin-top: 3em;
+    list-style: none;
+    margin: 2.5em auto 3em auto;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    /* border: 1px solid green; */
 }
 
 .social_media_links a {
-    text-decoration: none;
-    font: 16px 'roboto_bold';
-    margin: 0px 1em 0px 1em;
-    color: var(--white);
-    transform-origin: 0 0;
-    transform: rotate(-45deg);
+    line-height: 1;
+    margin: 0 10px 0 10px;
 }
 
-.social_media_links a:hover {
-    color: var(--orange);
+.social_media_links .icons{
+    width: 1.75em;
+    height: 1.75em;
+    stroke-width: 1;
+    stroke: var(--light-grey);
+    fill: var(--light-grey);
 }
 
-.rotator {
-    transform: rotate(-10deg);
-
-    /* border: 1px solid blue; */
+.social_media_links .icons:hover{
+    stroke-width: 1;
+    stroke: #000;
+    fill: #bf5700;
 }
-
 
 /* About-Me Section
 ------------------------------------------------------------------------------- */
@@ -223,7 +216,6 @@ header {
 
 .aboutMe_content {
     text-align: center;
-
     /* border: 2px solid green; */
 }
 
@@ -231,13 +223,13 @@ header {
 /* Main Content
 ------------------------------------------------------------------------------- */
 #mainContent {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
     max-width: 850px;
     margin: 1px auto;
     padding: 1px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #mainContent h3 {
@@ -256,10 +248,10 @@ header {
 /* Footer
 ------------------------------------------------------------------------------- */
 footer {
+    text-align: center;
     margin: 1px;
     padding: 1em;
     border-top: 2px solid var(--black);
-    text-align: center;
 }
 
 footer a {
