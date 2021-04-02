@@ -173,7 +173,7 @@ header {
     position: relative;
     text-align: center;
     font-size: 22px;
-    margin: 2px 4em 2px 4em;
+    margin: 1em 4em 2px 4em;
 }
 
 
@@ -209,7 +209,7 @@ header {
 ------------------------------------------------------------------------------- */
 
 #aboutMe {
-    height: 20vh;
+    height: 200px;
     margin-top: 1em;
     /* border: 2px solid red; */
 }
@@ -220,11 +220,47 @@ header {
 }
 
 
+/* Projects Section
+------------------------------------------------------------------------------- */
+
+#projects {
+    height: 200px;
+    margin-top: 1em;
+    /* border: 2px solid red; */
+}
+
+.projects_content {
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+/* Resume Section
+------------------------------------------------------------------------------- */
+
+#resume {
+    height: 200px;
+
+    max-width: 800px;
+    margin: 1em auto 3em auto;
+    /* border: 2px solid red; */
+}
+
+.resume_content {
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+.resume_content p {
+    margin-bottom: 2em;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
 /* Main Content
 ------------------------------------------------------------------------------- */
 #mainContent {
     max-width: 850px;
-    margin: 1px auto;
+    margin: 30em auto;
     padding: 1px;
 
     display: flex;
