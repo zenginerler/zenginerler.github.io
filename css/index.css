@@ -64,11 +64,11 @@ header {
 }
 
 
-/* TODO: improve left side of the banner */
+/* TODO: improve left side of the banner
 #bannerLeft {
     justify-content: flex-start;
     flex: 1;
-}
+} */
 
 /* TODO: add better and transparent logo */
 #logo {
@@ -89,6 +89,7 @@ header {
 
 
 #bannerMiddle {
+    padding: 0.6em;
     flex: 2;
 }
 
@@ -119,7 +120,7 @@ header {
     color: var(--orange);
 }
 
-/* ! FIXME: add some js functionality */
+/* ! FIXME: add some js functionality
 #bannerRight {
     justify-content: flex-end;
     flex: 1;
@@ -138,7 +139,7 @@ header {
 
 #bannerRight h3 {
     font: 14px 'roboto_bold';
-}
+} */
 
 
 /* Welcome Section
@@ -159,7 +160,7 @@ header {
     position: relative;
     min-width: 300px;
     max-width: 900px;
-    margin: 18% auto 5% auto;
+    margin: 16% auto 5% auto;
 }
 
 #welcome_title {
@@ -173,7 +174,7 @@ header {
     position: relative;
     text-align: center;
     font-size: 22px;
-    margin: 1em 4em 2px 4em;
+    margin: 2em 4em 2px 4em;
 }
 
 
@@ -197,6 +198,8 @@ header {
     stroke-width: 1;
     stroke: var(--light-grey);
     fill: var(--light-grey);
+
+    margin: 0 .8em 0 .8em;
 }
 
 .social_media_links .icons:hover{
@@ -234,14 +237,37 @@ header {
 ------------------------------------------------------------------------------- */
 
 #aboutMe {
-    height: 500px;
-    margin-top: 1em;
+    height: 1000px;
+    padding: 6em 0 8em 0;
     /* border: 2px solid red; */
 }
 
 .aboutMe_content {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    
     /* border: 2px solid green; */
+}
+
+.profile_pic {
+    width: 12em;
+    height: 12em;
+    margin: 1em 6em 0 6em;
+    border: 1rem solid rgba(255, 255, 255, 0.02);
+    border-radius: 50%;
+}
+
+#aboutMe_content_text {
+    height: inherit;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 12em 0 0em;
+    padding: 1em;
+
+    /* border: 2px solid blue; */
 }
 
 
