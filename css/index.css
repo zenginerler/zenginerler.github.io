@@ -205,11 +205,36 @@ header {
     fill: #bf5700;
 }
 
+/* Main Content
+------------------------------------------------------------------------------- */
+#mainContent {
+    max-width: 850px;
+    margin: 30em auto;
+    padding: 1px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainContent h3 {
+    padding: 1em 1em 0 1em;
+}
+
+#mainContent p {
+    padding: 1em;
+}
+
+.contentContainer {
+    text-align: center;
+}
+
+
 /* About-Me Section
 ------------------------------------------------------------------------------- */
 
 #aboutMe {
-    height: 200px;
+    height: 500px;
     margin-top: 1em;
     /* border: 2px solid red; */
 }
@@ -256,29 +281,6 @@ header {
     /* border: 2px solid green; */
 }
 
-/* Main Content
-------------------------------------------------------------------------------- */
-#mainContent {
-    max-width: 850px;
-    margin: 30em auto;
-    padding: 1px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#mainContent h3 {
-    padding: 1em 1em 0 1em;
-}
-
-#mainContent p {
-    padding: 1em;
-}
-
-.contentContainer {
-    text-align: center;
-}
 
 
 /* Footer
