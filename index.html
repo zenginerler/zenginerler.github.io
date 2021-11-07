@@ -2,40 +2,27 @@
 <html lang="en">
 
 <head>
-  <title> Zenginerler Home </title>
+  <title> Zenginerler Personal Website </title>
   <meta charset="UTF-8">
-  <meta name="description" content="Zenginerler Homepage">
+  <meta name="description" content="Zenginerler Personal Website">
   <meta name="author" content="Mehmet Yavuz Zenginerler">
   <link rel="icon" href="./data/tempLogo.jpg">
   <link href="./css/index.css" rel="stylesheet">
+  <link href="https://indestructibletype.com/fonts/Jost.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header>
     <div class="banner" id="bannerScroll">
 
-      <!-- <div id="bannerLeft">
-        <a href="./index.html"><img id="logo" src="./data/tempLogo.jpg" alt="SoundscapeLogo"></a>
-        <span id="name"> Zenginerler </span>
-      </div> -->
-
       <div id="bannerMiddle">
         <ul class="navigation">
           <li><a class="heading" href="#welcome">Home</a></li>
           <li><a class="heading" href="#aboutMe">About</a></li>
-          <li><a class="heading" href="#mainContent">Projects</a></li>
-          <li><a class="heading" href="#mainContent">Contact</a></li>
+          <li><a class="heading" href="#projects">Projects</a></li>
+          <li><a class="heading" href="#resume">Contact</a></li>
         </ul>
       </div>
-
-      <!-- <div id="bannerRight">
-        <a href="https://github.com/zenginerler">
-          <h3> GitHub</h3>
-        </a>
-        <a href="https://www.linkedin.com/in/zenginerler/">
-          <h3> LinkedIn </h3>
-        </a>
-      </div> -->
 
     </div>
   </header>
@@ -46,9 +33,9 @@
       <h1 id="welcome_title"> Mehmet Yavuz Zenginerler </h1>
 
       <h2 id="welcome_message">
-        Hello! &#x1F44B; I am a <b>software engineer</b> working for American Airlines. If I'm not at work, I'm probably
-        working
-        on my own projects. If you want to learn more about me, keep scrolling!
+        Hi there! &#x1F44B; I am a <b>software engineer</b> at American Airlines.
+        If I'm not at work, I'm probably working on my own projects.
+        If you want to learn more about me, keep scrolling!
       </h2>
       <!-- &#128296; draft &#128679; -->
 
@@ -78,6 +65,7 @@
     </div>
   </section>
 
+
   <section id="aboutMe">
     <div class="aboutMe_content">
 
@@ -105,21 +93,107 @@
         </p>
       </div>
 
-
     </div>
   </section>
+
 
   <section id="projects">
     <div class="projects_content">
 
       <h3> My Projects: </h3>
       <br>
-      <p>
-        &#128679; Under Development! &#128296;
-      </p>
+      <div class="project_cards_grid">
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img
+                src="https://user-images.githubusercontent.com/64453575/104114903-18a35f80-52cf-11eb-8dcc-aa7d837dc569.gif">
+              <h3>Tiko</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>2D platformer game that I developed using Unity and C#. Go to the repository to play a demo.</p><br>
+              <a href="https://github.com/zenginerler/Tiko">&#9989; Repository</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img src="./data/icons/007-bot.png">
+              <h3>Discord Bot</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>Always online Discord bot that I developed as an example Python project for my mentees.</p>
+              <a href="https://github.com/zenginerler/DiscordBot">&#9989; Repository</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img src="./data/icons/002-ui-design.png">
+              <h3>Mentor</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>Complete Flutter application for a non-profit organization.</p>
+              <a href="https://github.com/zenginerler/Mentor">&#9989; Repository</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img src="./data/icons/001-data.png">
+              <h3>Image Captioning</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>Completely functional web application that runs our custom image captioning models along with video
+                processing features.</p>
+              <a href="#projects">&#10060; Private</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img src="./data/icons/004-workflow.png">
+              <h3>Flowe</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>IOS application that allows users to have better control over their project workflows.</p>
+              <a href="#projects">&#10060; Private</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img src="./data/icons/006-additive-synthesis.png">
+              <h3>Soundscape</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>Music review website that allows users to share reviews for songs/albums with Spotify integration.</p>
+              <a href="#projects">&#10060; Private</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </section>
+
 
   <section id="resume">
     <div class="resume_content">
@@ -130,7 +204,7 @@
         &#128679; Under Development! &#128296;
       </p> <br>
 
-      <h3> Education </h3>
+      <h4> Education </h4>
       <p>
         Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
         non congue lectus. Cras mollis arcu sed nulla gravida, eu fermentum neque mattis. Etiam velit ipsum,
@@ -139,7 +213,7 @@
         dui in, viverra lectus.
       </p>
 
-      <h3> Experience </h3>
+      <h4> Experience </h4>
       <p>
         Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
         non congue lectus. Cras mollis arcu sed nulla gravida, eu fermentum neque mattis. Etiam velit ipsum,
@@ -148,7 +222,7 @@
         dui in, viverra lectus.
       </p>
 
-      <h3> Skills </h3>
+      <h4> Skills </h4>
       <p>
         Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
         non congue lectus. Cras mollis arcu sed nulla gravida, eu fermentum neque mattis. Etiam velit ipsum,
@@ -158,135 +232,6 @@
       </p>
     </div>
   </section>
-
-  <br><br><br><br>
-  <br><br><br><br>
-  <br><br><br><br>
-
-  <div id="mainContent">
-    <div class="contentContainer">
-      <h3> Title - 1 </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et dignissim tortor, vel dignissim
-        nunc. Vestibulum a purus risus. Nullam gravida enim sit amet maximus ultricies. Praesent a mauris vitae
-        nibh aliquam vulputate. Quisque mi lacus, mollis vel porttitor semper, tincidunt eget diam. Donec
-        finibus ac enim blandit mattis. Quisque non elit velit. Nullam molestie, orci nec luctus consectetur,
-        augue elit gravida eros, et venenatis lorem enim eu quam. Proin non auctor metus. Duis gravida erat id
-        ex sodales elementum. Aliquam eu malesuada ante, ut dignissim sem. Aliquam mauris sapien, volutpat quis
-        congue ac, convallis id lacus. Aenean eget vehicula sapien. Proin varius eros a vulputate sodales.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 2 </h3>
-      <p>
-        Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
-        non congue lectus. Cras mollis arcu sed nulla gravida, eu fermentum neque mattis. Etiam velit ipsum,
-        consequat nec euismod eu, ornare condimentum arcu. Pellentesque at ipsum eget turpis pellentesque
-        blandit ut non velit. Vestibulum sagittis et ipsum vel bibendum. Nullam vitae mi sollicitudin, maximus
-        dui in, viverra lectus.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 3 </h3>
-      <p>
-        Nullam a placerat ex. Curabitur interdum, elit non posuere consequat, lectus velit vehicula urna, eu
-        iaculis lectus neque quis augue. Etiam accumsan pharetra luctus. Curabitur hendrerit quam ut dolor
-        tincidunt ullamcorper. Vestibulum eu libero elementum, vestibulum mi eu, venenatis massa. Nam a massa ac
-        nisi interdum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae; Ut dictum rhoncus dui, lobortis venenatis urna aliquam quis. Nullam hendrerit mi ante, vel dictum
-        quam rutrum sed. Nam at tempor ante, non laoreet nibh. Praesent est nisl, ullamcorper quis ultrices
-        eget, hendrerit id mi. Aenean aliquam quam eu feugiat accumsan. Mauris imperdiet ultricies velit, vel
-        ultricies lorem ultricies ac. Fusce vitae tellus vel justo varius commodo nec sed risus.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 4 </h3>
-      <p>
-        Etiam suscipit, diam vel vestibulum convallis, arcu dolor pharetra neque, sit amet iaculis ipsum tortor
-        at risus. In congue ante nec turpis tincidunt pretium. Sed vestibulum porta lorem, ut auctor massa
-        congue quis. Etiam ut porta risus. Maecenas non porta leo. Suspendisse iaculis luctus venenatis. Nam id
-        faucibus tortor, sed vehicula felis. Aenean rutrum et diam mattis sodales. Morbi quis tortor quis nulla
-        tristique congue. Maecenas auctor nunc nec quam placerat rhoncus. Sed ullamcorper iaculis dolor vitae
-        ornare. Donec dui sapien, lobortis eget pellentesque at, porta a orci. Integer tristique commodo erat
-        pharetra elementum. Nullam eget nulla eget leo cursus euismod.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 5 </h3>
-      <p>
-        Proin auctor ipsum at turpis ullamcorper venenatis quis nec velit. Praesent eget tristique nisl.
-        Maecenas
-        eget leo mollis dui facilisis lacinia quis quis orci. Nulla lacinia orci sed ipsum sollicitudin, non
-        laoreet sem luctus. Proin egestas sagittis sapien at ultricies. Duis sit amet lectus sed odio varius
-        convallis nec vel nulla. Aliquam et aliquet purus. Aliquam eleifend lobortis metus hendrerit dapibus. In
-        porttitor pellentesque turpis, scelerisque feugiat ligula sodales eu. Morbi magna augue, aliquet in
-        massa id, interdum efficitur velit. Fusce non iaculis ante, vel euismod ligula. Suspendisse tristique
-        non diam at finibus. Etiam id massa risus. Ut id felis lobortis, feugiat mauris sit amet, laoreet elit.
-        Nam.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 6 </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et dignissim tortor, vel dignissim
-        nunc. Vestibulum a purus risus. Nullam gravida enim sit amet maximus ultricies. Praesent a mauris vitae
-        nibh aliquam vulputate. Quisque mi lacus, mollis vel porttitor semper, tincidunt eget diam. Donec
-        finibus ac enim blandit mattis. Quisque non elit velit. Nullam molestie, orci nec luctus consectetur,
-        augue elit gravida eros, et venenatis lorem enim eu quam. Proin non auctor metus. Duis gravida erat id
-        ex sodales elementum. Aliquam eu malesuada ante, ut dignissim sem. Aliquam mauris sapien, volutpat quis
-        congue ac, convallis id lacus. Aenean eget vehicula sapien. Proin varius eros a vulputate sodales.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 7 </h3>
-      <p>
-        Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
-        non congue lectus. Cras mollis arcu sed nulla gravida, eu fermentum neque mattis. Etiam velit ipsum,
-        consequat nec euismod eu, ornare condimentum arcu. Pellentesque at ipsum eget turpis pellentesque
-        blandit ut non velit. Vestibulum sagittis et ipsum vel bibendum. Nullam vitae mi sollicitudin, maximus
-        dui in, viverra lectus.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 8 </h3>
-      <p>
-        Nullam a placerat ex. Curabitur interdum, elit non posuere consequat, lectus velit vehicula urna, eu
-        iaculis lectus neque quis augue. Etiam accumsan pharetra luctus. Curabitur hendrerit quam ut dolor
-        tincidunt ullamcorper. Vestibulum eu libero elementum, vestibulum mi eu, venenatis massa. Nam a massa ac
-        nisi interdum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae; Ut dictum rhoncus dui, lobortis venenatis urna aliquam quis. Nullam hendrerit mi ante, vel dictum
-        quam rutrum sed. Nam at tempor ante, non laoreet nibh. Praesent est nisl, ullamcorper quis ultrices
-        eget, hendrerit id mi. Aenean aliquam quam eu feugiat accumsan. Mauris imperdiet ultricies velit, vel
-        ultricies lorem ultricies ac. Fusce vitae tellus vel justo varius commodo nec sed risus.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 9 </h3>
-      <p>
-        Etiam suscipit, diam vel vestibulum convallis, arcu dolor pharetra neque, sit amet iaculis ipsum tortor
-        at risus. In congue ante nec turpis tincidunt pretium. Sed vestibulum porta lorem, ut auctor massa
-        congue quis. Etiam ut porta risus. Maecenas non porta leo. Suspendisse iaculis luctus venenatis. Nam id
-        faucibus tortor, sed vehicula felis. Aenean rutrum et diam mattis sodales. Morbi quis tortor quis nulla
-        tristique congue. Maecenas auctor nunc nec quam placerat rhoncus. Sed ullamcorper iaculis dolor vitae
-        ornare. Donec dui sapien, lobortis eget pellentesque at, porta a orci. Integer tristique commodo erat
-        pharetra elementum. Nullam eget nulla eget leo cursus euismod.
-      </p>
-    </div>
-    <div class="contentContainer">
-      <h3> Title - 10 </h3>
-      <p>
-        Proin auctor ipsum at turpis ullamcorper venenatis quis nec velit. Praesent eget tristique nisl.
-        Maecenas
-        eget leo mollis dui facilisis lacinia quis quis orci. Nulla lacinia orci sed ipsum sollicitudin, non
-        laoreet sem luctus. Proin egestas sagittis sapien at ultricies. Duis sit amet lectus sed odio varius
-        convallis nec vel nulla. Aliquam et aliquet purus. Aliquam eleifend lobortis metus hendrerit dapibus. In
-        porttitor pellentesque turpis, scelerisque feugiat ligula sodales eu. Morbi magna augue, aliquet in
-        massa id, interdum efficitur velit. Fusce non iaculis ante, vel euismod ligula. Suspendisse tristique
-        non diam at finibus. Etiam id massa risus. Ut id felis lobortis, feugiat mauris sit amet, laoreet elit.
-        Nam.
-      </p>
-    </div>
-  </div>
 
   <footer>
     <div>

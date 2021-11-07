@@ -9,319 +9,344 @@
 
 /* global variables */
 :root {
-    --white: #fff;
-    --black: #000;
-    --backgroundBlack: #1E1E1E;
-    --light-grey: #eae7e6;
-    --dark-grey: #57605f;
-    --orange: #bf5700;
-    --light-orange: #f5b042;
-    --shadow-color: #000000aa;
+  --white: #fff;
+  --black: #000;
+  --backgroundBlack: #141414;
+  --light-grey: #eae7e6;
+  --dark-grey: #57605f;
+  --orange: #bf5700;
+  --light-orange: #f5b042;
+  --shadow-color: #000000aa;
 }
 
 /* presets */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'opensans_regular', sans-serif, 'roboto_regular';
-    background-color: var(--backgroundBlack);
-    color: var(--light-grey);
+  font-family: "opensans_regular", sans-serif, "roboto_regular";
+  background-color: var(--backgroundBlack);
+  color: var(--light-grey);
 }
 
+h3 {
+  font-family: consolas;
+  font-size: 32px;
+}
 
 /* Header 
 ------------------------------------------------------------------------------- */
 header {
-    border: none;
+  border: none;
 }
 
 .banner {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    background-color: transparent;
-    transition: top .5s;
+  background-color: transparent;
+  transition: top 0.5s;
 
-    width: 100%;
-    z-index: 3;
-    padding: 5px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  z-index: 3;
+  padding: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .banner div {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;   
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-/* TODO: improve left side of the banner
-#bannerLeft {
-    justify-content: flex-start;
-    flex: 1;
-} */
-
-/* TODO: add better and transparent logo */
-#logo {
-    display: block;
-    max-width: 48px;
-    max-height: 48px;
-    border-radius: 50%;
-    padding: 3px;
-}
-
-/* TODO: improve font settings for modern look -1*/
-#name {
-    margin: 5px;
-    font: 18px 'roboto_medium-italic';
-    letter-spacing: 1px;
-    color: var(--light-grey);
-}
-
 
 #bannerMiddle {
-    padding: 0.6em;
-    flex: 2;
+  padding: 0.6em;
+  flex: 2;
 }
 
 /* TODO: improve font settings for modern look -2*/
 .navigation {
-    list-style: none;
-    width: 100%;
-    max-width: 600px;
-    margin: 2px;
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+  margin: 2px;
 
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
 }
 
 .navigation a {
-    text-decoration: none;
-    font: 15px 'roboto_medium';
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 1px;
+  text-decoration: none;
+  font: 15px "roboto_medium";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1px;
 
-    display: block;
-    color: var(--light-grey);
+  display: block;
+  color: var(--light-grey);
+
+  transition: all .2s ease-in-out;
 }
-  
+
 .navigation a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
-
-/* ! FIXME: add some js functionality
-#bannerRight {
-    justify-content: flex-end;
-    flex: 1;
-}
-
-#bannerRight a {
-    text-decoration: none;
-    font: 14px 'opensans_bold';
-    padding: 1em;
-    color: var(--dark-grey);
-}
-
-#bannerRight a:hover {
-    color: var(--orange);
-}
-
-#bannerRight h3 {
-    font: 14px 'roboto_bold';
-} */
-
 
 /* Welcome Section
 ------------------------------------------------------------------------------- */
 #welcome {
-    height: 100vh;
-    width: 100%;
-    min-height: 800px;
-    overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
 
-    background-image: url(../data/ship_stars_edited.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../data/ship_stars_edited.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .welcome_content {
-    position: relative;
-    min-width: 300px;
-    max-width: 900px;
-    margin: 16% auto 5% auto;
+  position: relative;
+  min-width: 300px;
+  max-width: 900px;
+  margin: 16% auto 5% auto;
 }
 
 #welcome_title {
-    position: relative;
-    text-align: center;
-    font-size: 60px;
-    margin: 0px 1rem 0px 1rem;
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  margin: 0px 1rem 0px 1rem;
 }
 
 #welcome_message {
-    position: relative;
-    text-align: center;
-    font-size: 22px;
-    margin: 2em 4em 2px 4em;
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  margin: 2em 4em 2px 4em;
 }
 
-
 .social_media_links {
-    list-style: none;
-    margin: 2.5em auto 3em auto;
+  list-style: none;
+  margin: 2.5em auto 3em auto;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .social_media_links a {
-    line-height: 1;
-    margin: 0 10px 0 10px;
+  line-height: 1;
+  margin: 0 10px 0 10px;
 }
 
-.social_media_links .icons{
-    width: 1.75em;
-    height: 1.75em;
-    stroke-width: 1;
-    stroke: var(--light-grey);
-    fill: var(--light-grey);
+.social_media_links .icons {
+  width: 1.75em;
+  height: 1.75em;
+  stroke-width: 1;
+  stroke: var(--light-grey);
+  fill: var(--light-grey);
 
-    margin: 0 .8em 0 .8em;
+  margin: 0 0.8em 0 0.8em;
 }
 
-.social_media_links .icons:hover{
-    stroke-width: 1;
-    stroke: #000;
-    fill: #bf5700;
+.social_media_links .icons:hover {
+  stroke-width: 1;
+  stroke: #000;
+  fill: #bf5700;
 }
-
-/* Main Content
-------------------------------------------------------------------------------- */
-#mainContent {
-    max-width: 850px;
-    margin: 30em auto;
-    padding: 1px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#mainContent h3 {
-    padding: 1em 1em 0 1em;
-}
-
-#mainContent p {
-    padding: 1em;
-}
-
-.contentContainer {
-    text-align: center;
-}
-
 
 /* About-Me Section
 ------------------------------------------------------------------------------- */
 
 #aboutMe {
-    height: 1000px;
-    padding: 6em 0 8em 0;
-    /* border: 2px solid red; */
+  height: 600px;
+  padding: 4em 0 4em 0;
+  /* border: 2px solid red; */
 }
 
 .aboutMe_content {
-    display: flex;
-    flex-direction: row;
-    height: 600px;
-    
-    /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+
+  /* border: 2px solid green; */
 }
 
 .profile_pic {
-    width: 12em;
-    height: 12em;
-    margin: 1em 6em 0 6em;
-    border: 1rem solid rgba(255, 255, 255, 0.02);
-    border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  margin: 4em 6em 0 6em;
+  border: 1rem solid rgba(255, 255, 255, 0.02);
+  border-radius: 50%;
 }
 
 #aboutMe_content_text {
-    height: inherit;
-    width: auto;
+  height: inherit;
+  width: auto;
 
-    display: flex;
-    flex-direction: column;
-    margin: 0 12em 0 0em;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 12em 0 0em;
+  padding: 1em;
 
-    /* border: 2px solid blue; */
+  /* border: 2px solid blue; */
 }
-
 
 /* Projects Section
 ------------------------------------------------------------------------------- */
 
 #projects {
-    height: 200px;
-    margin-top: 1em;
-    /* border: 2px solid red; */
+  height: 100vh;
+  margin-top: 1em;
 }
 
 .projects_content {
-    text-align: center;
-    /* border: 2px solid green; */
+  text-align: center;
+}
+
+.project_cards_grid {
+  color: black;
+  width: 1000px;
+  position: relative;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  /* border: 2px solid black; */
+}
+
+.project_cards_grid .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.project_cards_grid .card .box {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.project_cards_grid .card .box.background1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.project_cards_grid .card:hover .box.background1 {
+  background: #ff5e00;
+  transform: translateY(0);
+}
+
+.project_cards_grid .card .box.background1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.project_cards_grid .card:hover .box.background1 .content {
+  opacity: 1;
+}
+
+.project_cards_grid .card .box.background1 .content img {
+  max-width: 200px;
+  max-height: 120px;
+}
+
+.project_cards_grid .card .box.background1 .content h3 {
+  font-family: consolas;
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.project_cards_grid .card .box.background2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.project_cards_grid .card:hover .box.background2 {
+  transform: translateY(0);
+}
+
+.project_cards_grid .card .box.background2 .content p {
+  font-family: "roboto_regular";
+  margin: 0;
+  padding: 0;
+}
+
+.project_cards_grid .card .box.background2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.project_cards_grid .card .box.background2 .content a:hover {
+  background: #333;
+  color: #fff;
 }
 
 /* Resume Section
 ------------------------------------------------------------------------------- */
-
 #resume {
-    height: 200px;
+  height: 100vh;
 
-    max-width: 800px;
-    margin: 1em auto 3em auto;
-    /* border: 2px solid red; */
+  max-width: 800px;
+  margin: 1em auto 3em auto;
+  /* border: 2px solid red; */
 }
 
 .resume_content {
-    text-align: center;
-    /* border: 2px solid green; */
+  text-align: center;
+  /* border: 2px solid green; */
 }
 
 .resume_content p {
-    margin-bottom: 2em;
-    text-align: center;
-    /* border: 2px solid green; */
+  margin-bottom: 2em;
+  text-align: center;
+  /* border: 2px solid green; */
 }
-
-
 
 /* Footer
 ------------------------------------------------------------------------------- */
 footer {
-    text-align: center;
-    margin: 1px;
-    padding: 1em;
-    border-top: 2px solid var(--black);
+  text-align: center;
+  margin: 1px;
+  padding: 1em;
+  border-top: 2px solid var(--black);
 }
 
 footer a {
-    color: var(--light-grey);
+  color: var(--light-grey);
 }
 
 footer a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }

@@ -27,7 +27,7 @@ window.onscroll = function() {
   //color transition
   var color = "transparent"
   if (currentScrollPos > Math.max(viewportHeight, 800)){
-    color = "#1E1E1E"
+    color = "#0a0a0a"
   }else {
     color = "transparent"
   }
