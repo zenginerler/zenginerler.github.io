@@ -189,7 +189,7 @@ header {
 .profile_pic {
   width: 12em;
   height: 12em;
-  margin: auto 1em auto 1.5em;
+  margin: auto 1.5em auto 1.5em;
   border: 1rem solid rgba(255, 255, 255, 0.02);
   border-radius: 50%;
 }
