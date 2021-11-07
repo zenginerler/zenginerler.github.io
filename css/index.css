@@ -34,7 +34,7 @@ body {
 }
 
 h3 {
-  font-family: consolas;
+  font-family: "Jost";
   font-size: 32px;
 }
 
@@ -82,7 +82,6 @@ header {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-
 }
 
 .navigation a {
@@ -95,7 +94,7 @@ header {
   display: block;
   color: var(--light-grey);
 
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navigation a:hover {
@@ -172,7 +171,7 @@ header {
 
 #aboutMe {
   min-height: 600px;
-  padding: 4em auto 4em auto;
+  padding: 3em 0 1em 0;
 
   /* border: 2px solid red; */
 }
@@ -180,8 +179,8 @@ header {
 .aboutMe_content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0em auto 0em auto;
+  justify-content: center;
+  margin: 2em auto 0em auto;
   max-width: 1400px;
 
   /* border: 2px solid green; */
@@ -190,7 +189,7 @@ header {
 .profile_pic {
   width: 12em;
   height: 12em;
-  margin: 4em 0em 0 6em;
+  margin: auto 1em auto 1.5em;
   border: 1rem solid rgba(255, 255, 255, 0.02);
   border-radius: 50%;
 }
@@ -200,19 +199,32 @@ header {
   max-width: 700px;
   min-width: 350px;
   width: auto;
-
+  
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 0em 0 0em;
   padding: 1em;
+
+  font-family: "opensans_regular";
+  text-align: none;
+  letter-spacing: 1.2px;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+
+hr {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Projects Section
 ------------------------------------------------------------------------------- */
 
 #projects {
-  height: 100vh;
-  margin-top: 1em;
+  min-height: 800px;
+  margin: 1em 0 6em 0;
 }
 
 .projects_content {
@@ -221,12 +233,12 @@ header {
 
 .project_cards_grid {
   color: black;
-  width: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: 0 auto 0 auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   /* border: 2px solid black; */
 }
@@ -234,6 +246,7 @@ header {
 .project_cards_grid .card {
   position: relative;
   cursor: pointer;
+  padding: 1em .5em;
 }
 
 .project_cards_grid .card .box {
@@ -320,7 +333,8 @@ header {
 /* Resume Section
 ------------------------------------------------------------------------------- */
 #resume {
-  height: 100vh;
+  min-height: min-content;
+  max-height: fit-content;
 
   max-width: 800px;
   margin: 1em auto 3em auto;
@@ -333,15 +347,180 @@ header {
 }
 
 .resume_content p {
+  padding: 1em;
   margin-bottom: 2em;
   text-align: center;
-  /* border: 2px solid green; */
+  font-size: 18px;
+  font-family: "opensans_regular";
+  letter-spacing: 1px;
+}
+
+.resume_content h4 {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 20px;
+  font-family: "opensans_regular";
+  letter-spacing: 1px;
+}
+
+.skills_wrapper {
+  display: inline-flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 800px;
+  margin: 0.5em;
+
+  /* border: 2px solid red; */
+}
+
+.skills_wrapper .icon {
+  position: relative;
+  background-color: #000;
+  border-radius: 10%;
+  padding: 15px;
+  margin: 32px 22px;
+  width: 72px;
+  height: 72px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.skills_wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.skills_wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.skills_wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.skills_wrapper .icon:hover span,
+.skills_wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.skills_wrapper .python:hover,
+.skills_wrapper .python:hover .tooltip,
+.skills_wrapper .python:hover .tooltip::before {
+  background-color: #306998;
+  color: #ffffff;
+}
+
+.skills_wrapper .javascript:hover,
+.skills_wrapper .javascript:hover .tooltip,
+.skills_wrapper .javascript:hover .tooltip::before {
+  background-color: #000;
+  color: #fcdc00;
+}
+
+.skills_wrapper .java:hover,
+.skills_wrapper .java:hover .tooltip,
+.skills_wrapper .java:hover .tooltip::before {
+  background-color: #f89820;
+  color: #ffffff;
+}
+
+.skills_wrapper .csharp {
+  font-size: 24px;
+}
+.skills_wrapper .csharp:hover,
+.skills_wrapper .csharp:hover .tooltip,
+.skills_wrapper .csharp:hover .tooltip::before {
+  background-color: #682876;
+  color: #000000;
+}
+
+.skills_wrapper .swift:hover,
+.skills_wrapper .swift:hover .tooltip,
+.skills_wrapper .swift:hover .tooltip::before {
+  background-color: #fff;
+  color: #f05138;
+}
+
+.skills_wrapper .r_project:hover,
+.skills_wrapper .r_project:hover .tooltip,
+.skills_wrapper .r_project:hover .tooltip::before {
+  background-color: #fff;
+  color: #165caa;
+}
+
+.skills_wrapper .git:hover,
+.skills_wrapper .git:hover .tooltip,
+.skills_wrapper .git:hover .tooltip::before {
+  background-color: #f34f29;
+  color: #ffffff;
+}
+
+.skills_wrapper .unix:hover,
+.skills_wrapper .unix:hover .tooltip,
+.skills_wrapper .unix:hover .tooltip::before {
+  background-color: #000;
+  color: #33ff00;
+}
+
+.skills_wrapper .php:hover,
+.skills_wrapper .php:hover .tooltip,
+.skills_wrapper .php:hover .tooltip::before {
+  background-color: #474a8a;
+  color: #ffffff;
+}
+
+.skills_wrapper .html:hover,
+.skills_wrapper .html:hover .tooltip,
+.skills_wrapper .html:hover .tooltip::before {
+  background-color: #fff;
+  color: #e34c26;
+}
+
+.skills_wrapper .css:hover,
+.skills_wrapper .css:hover .tooltip,
+.skills_wrapper .css:hover .tooltip::before {
+  background-color: #fff;
+  color: #264de4;
+}
+
+.skills_wrapper .database:hover,
+.skills_wrapper .database:hover .tooltip,
+.skills_wrapper .database:hover .tooltip::before {
+  background-color: #f34f29;
+  color: #ffffff;
 }
 
 /* Footer
 ------------------------------------------------------------------------------- */
 footer {
   text-align: center;
+  font-size: 14px;
   margin: 1px;
   padding: 1em;
   border-top: 2px solid var(--black);

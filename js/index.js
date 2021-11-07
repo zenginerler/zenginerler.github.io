@@ -10,11 +10,13 @@ function updateViewport() {
 
   //navigation bar adjustments
   if (viewportWidth < 800){
-    document.getElementById("bannerLeft").style.display = "none";
-    document.getElementById("bannerRight").style.display = "none";
+    document.getElementById("profile_pic1").style.display = "none";
+    document.getElementById("profile_pic2").style.display = "block";
+    document.getElementById("aboutMe_content_text").style.textAlign = "center";
   } else {
-    document.getElementById("bannerLeft").style.display = "flex";
-    document.getElementById("bannerRight").style.display = "flex";
+    document.getElementById("profile_pic1").style.display = "block";
+    document.getElementById("profile_pic2").style.display = "none";
+    document.getElementById("aboutMe_content_text").style.textAlign = "none";
   }
 }
 

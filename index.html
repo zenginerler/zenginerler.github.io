@@ -9,6 +9,7 @@
   <link rel="icon" href="./data/tempLogo.jpg">
   <link href="./css/index.css" rel="stylesheet">
   <link href="https://indestructibletype.com/fonts/Jost.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/14218699b6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -68,10 +69,11 @@
 
   <section id="aboutMe">
     <div class="aboutMe_content">
-
-      <img class="profile_pic" src="./data/profile_pic.jpg" alt="Profile Image">
+      <img class="profile_pic" id="profile_pic1" src="./data/profile_pic.jpg" alt="Profile Image">
       <div id="aboutMe_content_text">
         <h3> About Me: </h3>
+        <br>
+        <img class="profile_pic" id="profile_pic2" src="./data/profile_pic.jpg" alt="Profile Image" hidden>
         <br>
         <p>
           I am a Software Engineer who likes to solve computational problems in a reliable and secure way, who also
@@ -85,7 +87,7 @@
           &#128679; Under Development! &#128296;
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          make a type specimen book. It has survived not only five centuries, &#128679; Under Development! &#128296;
         </p>
       </div>
 
@@ -117,20 +119,6 @@
         <div class="card">
           <div class="box background1">
             <div class="content">
-              <img src="./data/icons/007-bot.png">
-              <h3>Discord Bot</h3>
-            </div>
-          </div>
-          <div class="box background2">
-            <div class="content">
-              <p>Always online Discord bot that I developed as an example Python project for my mentees.</p>
-              <a href="https://github.com/zenginerler/DiscordBot">&#9989; Repository</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box background1">
-            <div class="content">
               <img src="./data/icons/002-ui-design.png">
               <h3>Mentor</h3>
             </div>
@@ -139,6 +127,20 @@
             <div class="content">
               <p>Complete Flutter application for a non-profit organization.</p>
               <a href="https://github.com/zenginerler/Mentor">&#9989; Repository</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box background1">
+            <div class="content">
+              <img src="./data/icons/007-bot.png">
+              <h3>Discord Bot</h3>
+            </div>
+          </div>
+          <div class="box background2">
+            <div class="content">
+              <p>Always online Discord bot that I developed as an example Python project for my mentees.</p>
+              <a href="https://github.com/zenginerler/DiscordBot">&#9989; Repository</a>
             </div>
           </div>
         </div>
@@ -194,12 +196,69 @@
   <section id="resume">
     <div class="resume_content">
 
-      <h3> Resume: </h3>
+      <h3> Skills: </h3>
       <br>
-      <p>
-        &#128679; Under Development! &#128296;
-      </p> <br>
 
+      <div class="skills_wrapper">
+        <div class="icon python">
+          <div class="tooltip">Python</div>
+          <span><i class="fab fa-python"></i></span>
+        </div>
+        <div class="icon javascript">
+          <div class="tooltip">JavaScript</div>
+          <span><i class="fab fa-js"></i></span>
+        </div>
+        <div class="icon java">
+          <div class="tooltip">Java</div>
+          <span><i class="fab fa-java"></i></span>
+        </div>
+        <div class="icon swift">
+          <div class="tooltip">Swift</div>
+          <span><i class="fab fa-swift"></i></span>
+        </div>
+        <div class="icon csharp">
+          <div class="tooltip">C-Sharp</div>
+          <span><i class="fas">C<i class="fas fa-hashtag"></i></i></span>
+        </div>
+        <div class="icon r_project">
+          <div class="tooltip">R</div>
+          <span><i class="fab fa-r-project"></i></span>
+        </div>
+        <div class="icon git">
+          <div class="tooltip">Git</div>
+          <span><i class="fab fa-git-alt"></i></span>
+        </div>
+        <div class="icon unix">
+          <div class="tooltip">Unix</div>
+          <span><i class="fas fa-terminal"></i></span>
+        </div>
+        <div class="icon php">
+          <div class="tooltip">PHP</div>
+          <span><i class="fab fa-php"></i></span>
+        </div>
+        <div class="icon html">
+          <div class="tooltip">HTML</div>
+          <span><i class="fab fa-html5"></i></span>
+        </div>
+        <div class="icon css">
+          <div class="tooltip">CSS</div>
+          <span><i class="fab fa-css3-alt"></i></span>
+        </div>
+        <div class="icon database">
+          <div class="tooltip">SQL & Firebase</div>
+          <span><i class="fas fa-database"></i></span>
+        </div>
+      </div>
+
+
+      <br><br><br><br><br>
+      <br><br><br><br><br>
+      &#128679; Under Development! &#128296;
+      <br><br><br><br>
+
+
+      <h3> Resume </h3>
+      <br><br><br>
       <h4> Education </h4>
       <p>
         Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
@@ -218,22 +277,18 @@
         dui in, viverra lectus.
       </p>
 
-      <h4> Skills </h4>
-      <p>
-        Donec varius et ipsum vitae hendrerit. Donec maximus in ligula vitae molestie. Praesent id auctor risus,
-        non congue lectus. Cras mollis arcu sed nulla gravida, eu fermentum neque mattis. Etiam velit ipsum,
-        consequat nec euismod eu, ornare condimentum arcu. Pellentesque at ipsum eget turpis pellentesque
-        blandit ut non velit. Vestibulum sagittis et ipsum vel bibendum. Nullam vitae mi sollicitudin, maximus
-        dui in, viverra lectus.
-      </p>
+      <br><br><br><br>
+      &#128679; Under Development! &#128296;
+      <br><br><br><br>
+
     </div>
   </section>
 
   <footer>
     <div>
       Mehmet Yavuz Zenginerler &copy; &emsp;
-      <a href="https://www.linkedin.com/in/zenginerler/"> LinkedIn </a>
-      &bull; <a href="https://github.com/zenginerler"> Github </a>
+      <a href="https://www.linkedin.com/in/zenginerler/"> LinkedIn</a>
+      &bull; <a href="https://github.com/zenginerler"> Github</a>
       &emsp; &bull; Page Last Updated:
       <script> document.write(document.lastModified);</script>
     </div>
