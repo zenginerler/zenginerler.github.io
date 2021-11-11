@@ -9,9 +9,8 @@
 
 /* global variables */
 :root {
-  --white: #fff;
-  --black: #000;
   --backgroundBlack: #141414;
+  --backgroundBlack2: #111111;
   --light-grey: #eae7e6;
   --dark-grey: #57605f;
   --orange: #bf5700;
@@ -490,9 +489,8 @@ hr {
 #resume {
   min-height: min-content;
   max-height: fit-content;
+  margin: 3em auto;
 
-  /* background-color: #111111; */
-  margin: 1em auto 3em auto;
   /* padding: 1em 2em; */
   /* border: 2px solid orange; */
 }
@@ -552,7 +550,7 @@ hr {
 }
 
 /* Timeline Images */
-#item1:after {
+/* #item1:after {
   background-image: url(../data/icons/005-work-in-progress.png);
 }
 
@@ -580,6 +578,10 @@ hr {
   background-image: url(../data/icons/005-work-in-progress.png);
 }
 
+#item7:after {
+  background-image: url(../data/icons/005-work-in-progress.png);
+} */
+
 .timeline ul li:after {
   background-size: contain;
   background-repeat: no-repeat;
@@ -597,6 +599,7 @@ hr {
 
 .timeline ul li:hover:after {
   opacity: 1;
+  cursor: pointer;
 }
 
 .timeline ul li:last-child {
@@ -696,7 +699,7 @@ footer {
   font-size: 14px;
   margin: 1px;
   padding: 1em;
-  border-top: 2px solid var(--black);
+  border-top: 2px solid #292929;
 }
 
 footer a {
