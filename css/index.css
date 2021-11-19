@@ -550,40 +550,36 @@ hr {
 }
 
 /* Timeline Images */
-/* #item1:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
+#item1:after {
+  background-image: url(../data/istanbul.jpg);
 }
 
 #item2:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
+  background-image: url(../data/kuleli.jpg);
 }
 
-#item2:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
-}
-
-#item3:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
-}
-
-#item4:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
-}
-
-#item5:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
-}
-
-#item6:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
-}
-
-#item7:after {
+/* #item3:after {
   background-image: url(../data/icons/005-work-in-progress.png);
 } */
 
+/* #item4:after {
+  background-image: url(../data/icons/005-work-in-progress.png);
+} */
+
+#item5:after {
+  background-image: url(../data/ut.jpg);
+}
+
+/* #item6:after {
+  background-image: url(../data/icons/005-work-in-progress.png);
+} */
+
+#item7:after {
+  background-image: url(../data/aa.jpg);
+}
+
 .timeline ul li:after {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   content: "";
