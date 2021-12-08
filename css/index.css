@@ -32,6 +32,7 @@ body {
   color: var(--light-grey);
 }
 
+/* TODO: Adjust Font & Location (Section Titles) */
 h3 {
   font-family: "Jost";
   font-size: 32px;
@@ -71,12 +72,12 @@ header {
   flex: 2;
 }
 
-/* TODO: improve font settings for modern look -2*/
+/* TODO: improve font settings for modern look */
 .navigation {
   list-style: none;
   width: 100%;
-  max-width: 600px;
-  margin: 2px;
+  max-width: 640px;
+  margin: 4px;
 
   display: flex;
   justify-content: space-around;
@@ -88,16 +89,17 @@ header {
   font: 15px "roboto_medium";
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 1px;
+  padding: 2px;
 
   display: block;
   color: var(--light-grey);
 
   transition: all 0.2s ease-in-out;
 }
-
+/* TODO: maybe add an animated underline? */
 .navigation a:hover {
   color: var(--orange);
+  /* border-bottom: 1px solid white; */
 }
 
 /* Welcome Section
@@ -108,6 +110,7 @@ header {
   min-height: 800px;
   overflow: hidden;
 
+  /* TODO: Try different Background Images */
   background-image: url(../data/ship_stars_edited.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -135,39 +138,66 @@ header {
   margin: 2em 4em 2px 4em;
 }
 
-.social_media_links {
+.socials-list {
   list-style: none;
-  margin: 2.5em auto 3em auto;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.social_media_links a {
-  line-height: 1;
-  margin: 0 10px 0 10px;
+.social-icon {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  color: #eae7e6;
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  margin: 20px 15px;
+  transition: 0.2s linear;
+  z-index: 1;
 }
 
-.social_media_links .icons {
-  width: 1.75em;
-  height: 1.75em;
-  stroke-width: 1;
-  stroke: var(--light-grey);
-  fill: var(--light-grey);
-
-  margin: 0 0.8em 0 0.8em;
+.social-icon:hover {
+  color: #fff;
 }
 
-.social_media_links .icons:hover {
-  stroke-width: 1;
-  stroke: #000;
-  fill: #bf5700;
+.social-icon i {
+  margin: auto;
+}
+
+.social-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 15%;
+  transform: scale(0);
+  transition: 0.2s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.social-icon:hover::before {
+  transform: scale(1);
+}
+
+.social-item:nth-child(1) a:hover:before {
+  background: #0f1216;
+}
+
+.social-item:nth-child(2) a:hover:before {
+  background: #ea4335;
+}
+
+.social-item:nth-child(3) a:hover:before {
+  background: #0072b1;
 }
 
 /* About-Me Section
 ------------------------------------------------------------------------------- */
-
 #aboutMe {
   min-height: 600px;
   padding: 3em 0 1em 0;
@@ -193,6 +223,13 @@ header {
   border-radius: 50%;
 }
 
+hr {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* UPDATE: Please Update this section :C */
 #aboutMe_content_text {
   height: inherit;
   max-width: 700px;
@@ -212,15 +249,8 @@ header {
   font-size: 16px;
 }
 
-hr {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
 /* Projects Section
 ------------------------------------------------------------------------------- */
-
 #projects {
   min-height: 800px;
   margin: 1em 0 6em 0;
@@ -231,6 +261,7 @@ hr {
   text-align: center;
 }
 
+/* UPDATE: Card hover area needs a update */
 .project_cards_grid {
   color: black;
   max-width: 1200px;
@@ -330,6 +361,7 @@ hr {
   color: #fff;
 }
 
+/* ADD: Add more skills */
 /* Skill Boxes */
 .skills_wrapper {
   display: inline-flex;
@@ -484,6 +516,7 @@ hr {
   color: #ffffff;
 }
 
+/* FIX: Change the class names to Timeline */
 /* Resume Section
 ------------------------------------------------------------------------------- */
 #resume {
@@ -558,6 +591,7 @@ hr {
   background-image: url(../data/kuleli.jpg);
 }
 
+/* TODO: Add more images and complete the paragraphs */
 /* #item3:after {
   background-image: url(../data/icons/005-work-in-progress.png);
 } */
@@ -690,6 +724,7 @@ hr {
 
 /* Footer
 ------------------------------------------------------------------------------- */
+/* UPDATE: Better footer would be nice */
 footer {
   text-align: center;
   font-size: 14px;
@@ -705,3 +740,16 @@ footer a {
 footer a:hover {
   color: var(--orange);
 }
+
+
+/* TODO : comment testing 123 */
+/* FIXME : comment testing 123 */
+/* BUG : comment testing 123 */
+/* TEMP : comment testing 123 */
+/* UPDATE : comment testing 123 */
+/* IMPROVE : comment testing 123 */
+/* WARNING : comment testing 123 */
+/* DELETE : comment testing 123 */
+/* INFO : comment testing 123 */
+/* [ ] : comment testing 123 */
+/* ? : comment testing 123 */
