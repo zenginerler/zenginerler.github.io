@@ -9,13 +9,27 @@
 
 /* global variables */
 :root {
-  --backgroundBlack: #141414;
-  --backgroundBlack2: #111111;
-  --light-grey: #eae7e6;
-  --dark-grey: #57605f;
-  --orange: #bf5700;
-  --light-orange: #f5b042;
-  --shadow-color: #000000aa;
+  --bg: #141414;
+  --bg1: #050505;
+  --bg2: #111111;
+  --bg3: #1e1f22;
+  --bg4: #292929;
+
+  --lightgrey: #eae7e6;
+  --burntorange: #bf5700;
+  --orange: #ff5e00;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --blackGithub: #0f1216;
+  --redGmail: #ea4335;
+  --blueLinkedin: #0072b1;
+
+  
+  /* --darkgrey: #57605f; */
+  /* --lightorange: #f5b042; */
+  /* --shadowcolor: #000000aa; */
 }
 
 /* presets */
@@ -28,8 +42,8 @@
 
 body {
   font-family: "opensans_regular", sans-serif, "roboto_regular";
-  background-color: var(--backgroundBlack);
-  color: var(--light-grey);
+  background-color: var(--bg);
+  color: var(--lightgrey);
 }
 
 /* TODO: Adjust Font & Location (Section Titles) */
@@ -92,7 +106,7 @@ header {
   padding: 2px;
 
   display: block;
-  color: var(--light-grey);
+  color: var(--lightgrey);
 
   transition: all 0.2s ease-in-out;
 }
@@ -150,7 +164,7 @@ header {
   text-decoration: none;
   position: relative;
   display: flex;
-  color: #eae7e6;
+  color: var(--lightgrey);
   font-size: 32px;
   width: 64px;
   height: 64px;
@@ -160,7 +174,7 @@ header {
 }
 
 .social-icon:hover {
-  color: #fff;
+  color: var(--white);
 }
 
 .social-icon i {
@@ -186,15 +200,15 @@ header {
 }
 
 .social-item:nth-child(1) a:hover:before {
-  background: #0f1216;
+  background: var(--blackGithub);
 }
 
 .social-item:nth-child(2) a:hover:before {
-  background: #ea4335;
+  background: var(--redGmail);
 }
 
 .social-item:nth-child(3) a:hover:before {
-  background: #0072b1;
+  background: var(--blueLinkedin);
 }
 
 /* About-Me Section
@@ -255,7 +269,7 @@ hr {
 #projects {
   min-height: 800px;
   margin: 1em 0 6em 0;
-  /* background-color: #111111; */
+  /* background-color: var(--bg2); */
 }
 
 .projects_content {
@@ -666,7 +680,7 @@ hr {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: #292929;
+    background-color: var(--bg4);
   }
 
   .timeline ul li {
@@ -717,7 +731,7 @@ hr {
   }
 
   .timeline ul li:hover::before {
-    background-color: #bf5700;
+    background-color: var(--burntorange);
     height: 25px;
     width: 25px;
   }
@@ -731,25 +745,56 @@ footer {
   font-size: 14px;
   margin: 1px;
   padding: 1em;
-  border-top: 2px solid #292929;
+  border-top: 2px solid var(--bg4);
 }
 
 footer a {
-  color: var(--light-grey);
+  color: var(--lightgrey);
 }
 
 footer a:hover {
-  color: var(--orange);
+  color: var(--burntorange);
 }
 
-/* TODO : comment testing 123 */
-/* FIXME : comment testing 123 */
-/* BUG : comment testing 123 */
-/* TEMP : comment testing 123 */
-/* UPDATE : comment testing 123 */
-/* IMPROVE : comment testing 123 */
-/* WARNING : comment testing 123 */
-/* DELETE : comment testing 123 */
-/* INFO : comment testing 123 */
-/* [ ] : comment testing 123 */
-/* ? : comment testing 123 */
+/* Go To Top Button
+ * ------------------------------------------------------------------- */
+ .go-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  
+  transform: translate(0, 200%);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.go-top-button a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  
+  border-radius: 50%;
+  background-color: var(--bg1);
+  color: var(--white);
+
+  transition: all .3s;
+}
+
+.go-top-button a:hover, 
+.go-top-button a:focus {
+  /* background-color: var(--burntorange); */
+  color: var(--burntorange);
+}
+
+
+.go-top-button.button-is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
