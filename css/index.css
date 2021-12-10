@@ -756,9 +756,7 @@ footer a:hover {
   color: var(--burntorange);
 }
 
-/* Go To Top Button
- * ------------------------------------------------------------------- */
- .go-top-button {
+.go-top-button {
   position: fixed;
   bottom: 20px;
   right: 20px;

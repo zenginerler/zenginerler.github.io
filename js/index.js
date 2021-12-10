@@ -6,6 +6,9 @@
   var viewportHeight = window.innerHeight;
   var viewportWidth = window.innerWidth;
   var prevScrollpos = window.pageYOffset;
+  const minHeightOfWelcome = 800;
+  const minWidthOfAbout = 800;
+  const upButtonPx = 700;
 
   // Hide-unhide navigation bar according to the scroll direction
   // ------------------------------------------------------------
@@ -14,7 +17,7 @@
 
     //color transition
     var color = "transparent"
-    if (currentScrollPos > Math.max(viewportHeight, 800)) {
+    if (currentScrollPos > Math.max(viewportHeight, minHeightOfWelcome)) {
       color = "#0a0a0a"
     } else {
       color = "transparent"
@@ -38,7 +41,7 @@
     viewportWidth = window.innerWidth;
 
     //navigation bar adjustments
-    if (viewportWidth < 800) {
+    if (viewportWidth < minWidthOfAbout) {
       document.getElementById("profile_pic1").style.display = "none";
       document.getElementById("profile_pic2").style.display = "block";
       document.getElementById("aboutMe_content_text").style.textAlign = "center";
@@ -54,7 +57,6 @@
   // Handle go to the top of the page button
   // ------------------------------------------------------------
   function showUpButton() {
-    const upButtonPx = 700;
     const goTopButton = document.querySelector(".go-top-button");
 
     // Show/hide the button
