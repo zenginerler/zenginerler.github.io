@@ -48,8 +48,31 @@ body {
 
 /* TODO: Adjust Font & Location (Section Titles) */
 h3 {
-  font-family: "Jost";
+  font-family: "roboto_bold";
   font-size: 32px;
+}
+
+.curvy_spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+}
+
+.curve_1 {
+  background-image: url('../data/curves1.svg');
+  /* transform: rotate(180deg); */
+
+  /* border: 2px solid red; */
+}
+
+.curve_2 {
+  background-image: url('../data/curves2.svg');
+  /* transform: rotate(180deg); */
+
+  /* border: 2px solid red; */
 }
 
 /* Header 
@@ -203,6 +226,7 @@ header {
   position: relative;
   text-align: center;
   font-size: 22px;
+  line-height: 1.6em;
   margin: 1.75em 4em 2px 4em;
 }
 
@@ -271,8 +295,7 @@ header {
 #aboutMe {
   min-height: 600px;
   padding: 3em 0 1em 0;
-
-  /* border: 2px solid red; */
+  background-color: #1E1E1E;
 }
 
 .aboutMe_content {
@@ -315,16 +338,18 @@ hr {
   font-family: "opensans_regular";
   text-align: none;
   letter-spacing: 1.2px;
+  line-height: 1.8em;
   margin-bottom: 2em;
   font-size: 16px;
+  color: #bebebe;
 }
 
 /* Projects Section
 ------------------------------------------------------------------------------- */
 #projects {
   min-height: 800px;
-  margin: 1em 0 6em 0;
-  /* background-color: var(--bg2); */
+  background-color: #141414;
+  
 }
 
 .projects_content {
@@ -439,7 +464,7 @@ hr {
   flex-flow: row wrap;
   max-width: 800px;
   margin: 0.5em;
-
+  
   /* border: 2px solid red; */
 }
 
@@ -592,10 +617,8 @@ hr {
 #resume {
   min-height: min-content;
   max-height: fit-content;
-  margin: 3em auto;
-
-  /* padding: 1em 2em; */
-  /* border: 2px solid orange; */
+  margin: 0 auto;
+  background-color: #111111;
 }
 
 .resume_content {
