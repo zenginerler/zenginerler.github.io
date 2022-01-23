@@ -64,14 +64,12 @@ h3 {
 .curve_1 {
   background-image: url('../data/curves1.svg');
   /* transform: rotate(180deg); */
-
   /* border: 2px solid red; */
 }
 
 .curve_2 {
   background-image: url('../data/curves2.svg');
   /* transform: rotate(180deg); */
-
   /* border: 2px solid red; */
 }
 
@@ -612,21 +610,21 @@ hr {
 }
 
 /* FIX: Change the class names to Timeline */
-/* Resume Section
+/* My Story Section
 ------------------------------------------------------------------------------- */
-#resume {
+#mystory {
   min-height: min-content;
   max-height: fit-content;
   margin: 0 auto;
   background-color: #111111;
 }
 
-.resume_content {
+.mystory_content {
   text-align: center;
   /* border: 2px solid green; */
 }
 
-.resume_content p {
+.mystory_content p {
   padding: 1em;
   margin-bottom: 2em;
   text-align: center;
@@ -635,7 +633,7 @@ hr {
   letter-spacing: 1px;
 }
 
-.resume_content h4 {
+.mystory_content h4 {
   margin-bottom: 0.5em;
   text-align: center;
   font-size: 20px;
