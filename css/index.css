@@ -703,6 +703,10 @@ hr {
   background-image: url(../data/aa.jpg);
 }
 
+#item8:after {
+  background-image: url(../data/ibm_cloud.jpg);
+}
+
 .timeline ul li:after {
   background-size: cover;
   background-repeat: no-repeat;
