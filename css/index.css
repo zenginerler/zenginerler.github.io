@@ -4,8 +4,8 @@
 ------------------------------------------------------------------------------- */
 
 /* font imports */
-@import url("./fonts/OpenSans/open_sans.css");
-@import url("./fonts/Roboto/roboto.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* global variables */
 :root {
@@ -26,7 +26,6 @@
   --redGmail: #ea4335;
   --blueLinkedin: #0072b1;
 
-  
   /* --darkgrey: #57605f; */
   /* --lightorange: #f5b042; */
   /* --shadowcolor: #000000aa; */
@@ -41,14 +40,14 @@
 }
 
 body {
-  font-family: "opensans_regular", sans-serif, "roboto_regular";
+  font-family: "Open Sans", sans-serif, "Roboto";
   background-color: var(--bg);
   color: var(--lightgrey);
 }
 
 /* TODO: Adjust Font & Location (Section Titles) */
 h3 {
-  font-family: "roboto_bold";
+  font-family: "Roboto";
   font-size: 32px;
 }
 
@@ -121,7 +120,8 @@ header {
 
 .navigation a {
   text-decoration: none;
-  font: 15px "roboto_medium";
+  font: 15px "Roboto";
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 2px;
@@ -333,7 +333,7 @@ hr {
   margin: 0 0em 0 0em;
   padding: 1em;
 
-  font-family: "opensans_regular";
+  font-family: "Open Sans";
   text-align: none;
   letter-spacing: 1.2px;
   line-height: 1.8em;
@@ -434,7 +434,7 @@ hr {
 }
 
 .project_cards_grid .card .box.background2 .content p {
-  font-family: "roboto_regular";
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
 }
@@ -454,7 +454,6 @@ hr {
   color: #fff;
 }
 
-/* ADD: Add more skills */
 /* Skill Boxes */
 .skills_wrapper {
   display: inline-flex;
@@ -487,6 +486,8 @@ hr {
 .skills_wrapper .tooltip {
   position: absolute;
   top: 0;
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 14px;
   background-color: #ffffff;
   color: #ffffff;
@@ -522,35 +523,45 @@ hr {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.skills_wrapper .golang:hover,
+.skills_wrapper .golang:hover .tooltip,
+.skills_wrapper .golang:hover .tooltip::before {
+  background-color: #fff;
+  color: #00ADD8;
+}
+
+.skills_wrapper .typescript .typescript-icon {
+  content:url(../data/icons/100-typescript-mono.png);
+  width: 36px;
+  padding-top: 12px;
+}
+.skills_wrapper .typescript:hover .typescript-icon {
+  content:url(../data/icons/101-typescript-color.png);
+  width: 36px;
+  padding-top: 12px;
+}
+.skills_wrapper .typescript:hover,
+.skills_wrapper .typescript:hover .tooltip,
+.skills_wrapper .typescript:hover .tooltip::before {
+  background-color: #000;
+  color: #3178C6;
+}
+
+.skills_wrapper .python .python-icon {
+  content:url(../data/icons/106-python-mono.png);
+  width: 36px;
+  padding-top: 12px;
+}
+.skills_wrapper .python:hover .python-icon {
+  content:url(../data/icons/107-python-color.png);
+  width: 36px;
+  padding-top: 12px;
+}
 .skills_wrapper .python:hover,
 .skills_wrapper .python:hover .tooltip,
 .skills_wrapper .python:hover .tooltip::before {
-  background-color: #306998;
-  color: #ffffff;
-}
-
-.skills_wrapper .javascript:hover,
-.skills_wrapper .javascript:hover .tooltip,
-.skills_wrapper .javascript:hover .tooltip::before {
   background-color: #000;
-  color: #fcdc00;
-}
-
-.skills_wrapper .java:hover,
-.skills_wrapper .java:hover .tooltip,
-.skills_wrapper .java:hover .tooltip::before {
-  background-color: #f89820;
-  color: #ffffff;
-}
-
-.skills_wrapper .csharp {
-  font-size: 24px;
-}
-.skills_wrapper .csharp:hover,
-.skills_wrapper .csharp:hover .tooltip,
-.skills_wrapper .csharp:hover .tooltip::before {
-  background-color: #682876;
-  color: #000000;
+  color: #306998;
 }
 
 .skills_wrapper .swift:hover,
@@ -560,11 +571,28 @@ hr {
   color: #f05138;
 }
 
-.skills_wrapper .r_project:hover,
-.skills_wrapper .r_project:hover .tooltip,
-.skills_wrapper .r_project:hover .tooltip::before {
-  background-color: #fff;
-  color: #165caa;
+.skills_wrapper .csharp .csharp-icon {
+  content:url(../data/icons/102-c-sharp-mono.png);
+  width: 40px;
+  padding-top: 12px;
+}
+.skills_wrapper .csharp:hover .csharp-icon {
+  content:url(../data/icons/103-c-sharp-color.png);
+  width: 40px;
+  padding-top: 12px;
+}
+.skills_wrapper .csharp:hover,
+.skills_wrapper .csharp:hover .tooltip,
+.skills_wrapper .csharp:hover .tooltip::before {
+  background-color: #000;
+  color: #682876;
+}
+
+.skills_wrapper .java:hover,
+.skills_wrapper .java:hover .tooltip,
+.skills_wrapper .java:hover .tooltip::before {
+  background-color: #f89820;
+  color: #ffffff;
 }
 
 .skills_wrapper .git:hover,
@@ -574,18 +602,18 @@ hr {
   color: #ffffff;
 }
 
-.skills_wrapper .unix:hover,
-.skills_wrapper .unix:hover .tooltip,
-.skills_wrapper .unix:hover .tooltip::before {
+.skills_wrapper .shell:hover,
+.skills_wrapper .shell:hover .tooltip,
+.skills_wrapper .shell:hover .tooltip::before {
   background-color: #000;
   color: #33ff00;
 }
 
-.skills_wrapper .php:hover,
-.skills_wrapper .php:hover .tooltip,
-.skills_wrapper .php:hover .tooltip::before {
-  background-color: #474a8a;
-  color: #ffffff;
+.skills_wrapper .javascript:hover,
+.skills_wrapper .javascript:hover .tooltip,
+.skills_wrapper .javascript:hover .tooltip::before {
+  background-color: #000;
+  color: #fcdc00;
 }
 
 .skills_wrapper .html:hover,
@@ -602,6 +630,37 @@ hr {
   color: #264de4;
 }
 
+.skills_wrapper .php:hover,
+.skills_wrapper .php:hover .tooltip,
+.skills_wrapper .php:hover .tooltip::before {
+  background-color: #474a8a;
+  color: #ffffff;
+}
+
+.skills_wrapper .docker:hover,
+.skills_wrapper .docker:hover .tooltip,
+.skills_wrapper .docker:hover .tooltip::before {
+  background-color: #fff;
+  color: #0db7ed;
+}
+
+.skills_wrapper .kubernetes .kubernetes-icon {
+  content:url(../data/icons/104-kubernetes-mono.png);
+  width: 40px;
+  padding-top: 12px;
+}
+.skills_wrapper .kubernetes:hover .kubernetes-icon {
+  content:url(../data/icons/105-kubernetes-color.png);
+  width: 40px;
+  padding-top: 12px;
+}
+.skills_wrapper .kubernetes:hover,
+.skills_wrapper .kubernetes:hover .tooltip,
+.skills_wrapper .kubernetes:hover .tooltip::before {
+  background-color: #fff;
+  color: #326ce5;
+}
+
 .skills_wrapper .database:hover,
 .skills_wrapper .database:hover .tooltip,
 .skills_wrapper .database:hover .tooltip::before {
@@ -609,7 +668,6 @@ hr {
   color: #ffffff;
 }
 
-/* FIX: Change the class names to Timeline */
 /* My Story Section
 ------------------------------------------------------------------------------- */
 #mystory {
@@ -629,7 +687,7 @@ hr {
   margin-bottom: 2em;
   text-align: center;
   font-size: 18px;
-  font-family: "opensans_regular";
+  font-family: "Open Sans";
   letter-spacing: 1px;
 }
 
@@ -637,7 +695,7 @@ hr {
   margin-bottom: 0.5em;
   text-align: center;
   font-size: 20px;
-  font-family: "opensans_regular";
+  font-family: "Open Sans";
   letter-spacing: 1px;
 }
 
@@ -682,14 +740,13 @@ hr {
   background-image: url(../data/kuleli.jpg);
 }
 
-/* TODO: Add more images and complete the paragraphs */
 /* #item3:after {
   background-image: url(../data/icons/005-work-in-progress.png);
 } */
 
-/* #item4:after {
-  background-image: url(../data/icons/005-work-in-progress.png);
-} */
+#item4:after {
+  background-image: url(../data/houston.jpg);
+}
 
 #item5:after {
   background-image: url(../data/ut.jpg);
