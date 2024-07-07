@@ -51,6 +51,11 @@ h3 {
   font-size: 32px;
 }
 
+h4 {
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
 .curvy_spacer {
   aspect-ratio: 960/300;
   width: 100%;
@@ -409,7 +414,7 @@ hr {
 }
 
 .project_cards_grid .card .box.background1 .content h3 {
-  font-family: consolas;
+  font-family: "Roboto";
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -598,8 +603,8 @@ hr {
 .skills_wrapper .git:hover,
 .skills_wrapper .git:hover .tooltip,
 .skills_wrapper .git:hover .tooltip::before {
-  background-color: #f34f29;
-  color: #ffffff;
+  background-color: #fff;
+  color: #f34f29;
 }
 
 .skills_wrapper .shell:hover,
@@ -659,6 +664,13 @@ hr {
 .skills_wrapper .kubernetes:hover .tooltip::before {
   background-color: #fff;
   color: #326ce5;
+}
+
+.skills_wrapper .ansible:hover,
+.skills_wrapper .ansible:hover .tooltip,
+.skills_wrapper .ansible:hover .tooltip::before {
+  background-color: #000;
+  color: #ee0000;
 }
 
 .skills_wrapper .database:hover,
